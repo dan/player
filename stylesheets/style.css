@@ -1,0 +1,117 @@
+body { 
+	padding: 50px;
+}
+
+.player {
+	width: 300px;
+	height: 40px;
+	position: relative;
+	background-color: #494949;
+	background: -moz-linear-gradient(bottom, #494949 0%, #494949 50%, #646464 50%, #646464 100%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#494949), color-stop(50%,#494949), color-stop(50%,#646464), color-stop(100%,#646464));
+}
+
+.player a {
+	opacity: 0.8;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.player a:hover,
+.player a:focus {
+	opacity: 1;
+}
+
+.player .play {
+	width: 12px;
+	height: 17px;
+	position: absolute;
+	top: 11px;
+	left: 13px;
+	background: url("/images/play_pause.png") 0 -17px;
+}
+
+.player .play.paused {
+	background-position: 0 0;
+}
+
+.player .transport {
+	width: 167px;
+	height: 8px;
+	position: absolute;
+	top: 15px;
+	left: 39px;	
+	border: 1px solid;
+	border-color: #3f3f3f #454545 #393939;
+	background-color: #888;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding;
+}
+
+.player .transport span,
+.player .transport strong,
+.player .transport em {
+	height: 8px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.player .track {
+	width: 100%;
+	z-index: 1;
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.5) inset;
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.5) inset;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.5) inset;
+}
+
+.player .playhead {
+	width: 18px;
+	height: 19px;
+	position: absolute;
+	top: -5px;
+	left: -6px;
+	z-index: 3;
+	background-image: url("/images/playhead.png");
+	opacity: 1;
+}
+
+.player .loaded {
+	background-color: #646464;
+}
+
+.player .played {
+	z-index: 2;
+	background-color: #6699cc;
+	background: -moz-linear-gradient(bottom, #6699CC 0%, #6699CC 50%, #8BB1D8 50%, #8BB1D8 100%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#6699CC), color-stop(50%,#6699CC), color-stop(50%,#8BB1D8), color-stop(100%,#8BB1D8));
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.275) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.275) inset;
+	box-shadow: 0 1px 0 rgba(255,255,255,.275) inset;
+}
+
+.player .time {
+	color: #fff;
+	font: bold 12px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	position: absolute;
+	top: 13px;
+	right: 44px;
+}
+
+
+.player .popout {
+	width: 23px;
+	height: 17px;
+	position: absolute;
+	top: 11px;
+	right: 9px;
+	background-image: url("/images/popout.png");
+}
+
+
+
