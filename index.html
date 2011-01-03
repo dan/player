@@ -27,7 +27,13 @@
 		<audio preload="none">
 			<source src="/audio/superhero-009.mp3" type="audio/mpeg" />
 		</audio>
-			
+		
+		<script>
+			if (!document.createElement('audio').canPlayType('audio/mpeg')) {
+				console.log("falling back");
+			}
+		</script>
+					
 	</div>
 
 	<script src="/javascripts/jquery-1.4.4.min.js"></script>
