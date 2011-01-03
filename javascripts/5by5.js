@@ -1,6 +1,16 @@
 // 5by5 Audio Player
 
-$(function() { audioPlayerInit();	});
+$(function() { 
+	
+	audioPlayerInit();	
+	
+	// Popout buttons
+	$('.popout').popupwindow({ 
+		height: 150, 
+		width: 400
+	});
+	
+});
 
 // Initialise any audio players that are present on the current page
 function audioPlayerInit() {
@@ -116,7 +126,7 @@ function audioPlayerInit() {
 				$(this).toggleClass('remaining');				
 				e.preventDefault();
 			});
-			*/
+			*/						
 			
 		});
 				
