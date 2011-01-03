@@ -20,6 +20,7 @@ body {
 .player a:hover,
 .player a:focus {
 	opacity: 1;
+	outline: 0 none;
 }
 
 .player .play {
@@ -28,11 +29,11 @@ body {
 	position: absolute;
 	top: 11px;
 	left: 13px;
-	background: url("/images/play_pause.png") 0 -17px;
+	background: url("/images/player/play_pause.png") 0 0;
 }
 
-.player .play.paused {
-	background-position: 0 0;
+.player .play.playing {
+	background-position: 0 -17px;
 }
 
 .player .transport {
@@ -49,6 +50,7 @@ body {
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding;
+	cursor: pointer;
 }
 
 .player .transport span,
@@ -77,7 +79,7 @@ body {
 	top: -5px;
 	left: -6px;
 	z-index: 3;
-	background-image: url("/images/playhead.png");
+	background-image: url("/images/player/playhead.png");
 	opacity: 1;
 }
 
@@ -110,7 +112,7 @@ body {
 	position: absolute;
 	top: 11px;
 	right: 9px;
-	background-image: url("/images/popout.png");
+	background-image: url("/images/player/popout.png");
 }
 
 

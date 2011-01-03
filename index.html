@@ -13,19 +13,26 @@
 <body>
 
 	<div class="player">
-		<a href="#" class="play paused"></a>
+		
+		<a href="#" class="play"></a>
 		<span class="transport">
-			<a href="#" class="playhead" style="left: 60px;"></a>
+			<a href="#" class="playhead ui-slider-handle"></a>
 			<span class="track"></span>
-			<em class="loaded" style="width: 130px;"></em>
-			<strong class="played" style="width: 70px;"></strong>
+			<em class="loaded"></em>
+			<strong class="played"></strong>
 		</span>
 		<a href="#" class="time remaining">00:00</a>
 		<a href="#" class="popout"></a>
+		
+		<audio>
+			<source src="/audio/superhero-009.mp3" type="audio/mpeg" />
+		</audio>
+			
 	</div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/jquery-1.4.4.min.js"%3E%3C/script%3E'))</script>  
+	<script src="/javascripts/jquery-1.4.4.min.js"></script>
+	<script src="/javascripts/jquery-ui-1.8.7.custom.min.js"></script>
+	<script src="/javascripts/5by5.js"></script>
   
 </body>
 </html>
