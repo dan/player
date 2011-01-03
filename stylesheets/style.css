@@ -77,7 +77,8 @@ body {
 	height: 19px;
 	position: absolute;
 	top: -5px;
-	left: -6px;
+	left: 0;
+	margin-left: -6px;
 	z-index: 3;
 	background-image: url("/images/player/playhead.png");
 	opacity: 1;

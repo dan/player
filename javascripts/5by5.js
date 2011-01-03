@@ -75,8 +75,7 @@ function audioPlayerInit() {
 							step: 0.01,
 							orientation: "horizontal",
 							range: "min",
-							max: audio.duration,
-							animate: false,					
+							max: audio.duration,		
 							slide: function(e, ui) {
 								var width = ui.handle.offsetLeft + 8;
 								playedBar.css("width", width + "px");								
